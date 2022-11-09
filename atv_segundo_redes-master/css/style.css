@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+.corpoLogin {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#layoutLogin {
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+
+#formLogin {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto 1fr;
+}
+
+#botaoLogin {
+  background: #f3f3f3;
+  border: 1px solid #333;
+  color: #333;
+  border-radius: 4px;
+  padding: 4px;
+  grid-column: span 2;
+  display: inline;
+  place-self: center;
+}
+
+.linkBotao {
+  font-size: 12px;
+  text-decoration: none;
+  color: #333;
+  grid-area: 4/1;
+  grid-column: span 2;
+  text-align: center;
+  place-self: center;
+}
+
+.linkBotao:hover {
+  color: #888;
+}
+
+.campoTexto {
+  height: 20px;
+  background: #ccc;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 4px;
+  width: 170px;
+  color: #333;
+}
+
+.topo {
+  border-bottom: 4px solid rgb(71, 131, 165);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 75px 1fr 85px;
+  align-items: center;
+}
+
+.logo {
+  justify-self: center;
+}
+
+.usuario {
+  justify-self: center;
+}
+
+.menu {
+  justify-self: end;
+  padding-right: 50px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: #999;
+}
+
+.corpo {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  place-items: center;
+  min-height: 60vh;
+  border-top: 15px solid rgb(250, 167, 13);
+}
+
+.formulario input {
+  padding: 14px;
+  color: #333;
+  background: #ccc;
+  border: none;
+  border-bottom: 1px solid #333;
+  border-radius: 2px;
+  font-size: 15px;
+}
+
+.formulario input[type="submit"],
+input[type="button"] {
+  background: rgb(250, 167, 13);
+  font-size: 14px;
+  padding: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  place-self: start;
+}
+
+.formulario input[type="submit"]:hover,
+input[type="button"]:hover {
+  background: rgb(253, 196, 91);
+  color: #000;
+}
+
+.formulario select {
+  padding: 14px;
+  color: #333;
+  background: #ccc;
+  border: none;
+  border-bottom: 1px solid #333;
+  border-radius: 2px;
+  font-size: 15px;
+}
+
+.formulario label {
+  padding-left: 15px;
+  text-transform: uppercase;
+}
+
+.formulario form {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  align-items: end;
+  gap: 30px 10px;
+}
+
+.rodape {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding: 10px;
+  border-top: 5px solid rgb(71, 131, 165);
+  background-color: #f3f3f3;
+}
+
+.lista {
+  border: 1px solid #333;
+  padding: 0;
+}
+
+.lista th {
+  border-bottom: 1px solid #333;
+  border-right: 1px dotted #333;
+  text-transform: uppercase;
+}
+
+.lista td {
+  border-bottom: 1px dotted #333;
+  border-right: 1px dotted #333;
+}
+
+.lista thead > tr:hover {
+  background: none;
+}
+
+.lista tr:hover {
+  background: #f1f1f1;
+}
+
+.lista td,
+th {
+  padding: 10px;
+}
+
+.lista a {
+  color: #1d7dfa;
+  text-decoration: none;
+}
+
+.lista a:hover {
+  color: #666;
+}

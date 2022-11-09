@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color:rgb(20, 227, 235);
+    display:grid;
+    align-content:center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    color:#333;
+}
+
+div{
+ display:grid;
+ justify-items: center;
+ gap:20px; 
+width:240px;
+border: 2px dotted rgb(214, 252, 4);
+border-radius:4px;
+padding:10px;
+}
+
+#formLogin {
+  display: grid;
+  gap:20px;
+  grid-template-columns: auto 1fr;
+}
+
+#botaologin{
+  background-color: blue;
+}
+
+.campoTexto{
+  background-color:rgb(30, 197, 197);
+}
